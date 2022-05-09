@@ -1,0 +1,214 @@
+/* SECTION SHOWCASE */
+
+.showcase{
+    background-image: url(../images/cover.png);
+    background-size: 100%;
+    margin-bottom: 40px;
+    display: grid;
+    height: 450px;
+}
+  
+.showcase-content{
+    margin-top: 150px;
+    margin-left: 250px;
+    width: 500px;
+}
+
+.showcase-content p{
+    font-size: 130%;
+    color: #333;
+}
+
+.showcase-content h1{
+    font-family: 'lato', sans-serif;
+    font-weight: bolder;
+}
+
+
+/* SECTION SERVICES */
+.services {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+  
+.services .service {
+    padding: 30px;
+}
+  
+.services .service:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+  
+.services .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color:#145DA0;
+}
+  
+.services .service .icon img {
+    max-width: 100px;
+}
+
+/* SECTION DEMO */
+.demonstration{
+    margin-bottom: 50px;
+}
+
+.demonstration .demo {
+    padding: 30px;
+}
+
+.demo p{
+    font-size: 120%;
+}
+
+.demo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    gap: 40px;
+    text-align: center;
+    background-color: #DCD9D3;
+}
+
+.btn-demo {
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+}
+  
+.btn-demo:hover {
+    border-bottom: 2px #145DA0 solid;
+}
+
+/* SECTION PLANS */
+.plans {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+  
+.plans .plan {
+    padding: 20px;
+}
+  
+.plans .plan:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+  
+.plans .plan h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #145DA0;
+}
+
+.btn-plan {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #fff;
+    color: #707070;
+    border: none;
+    border-radius: 5px;
+    background-color: #DCD9D3;
+    border: 1px #707070 solid;
+}
+
+.btn-plan:hover {
+    transform: scale(0.98);
+}
+ 
+.plan{
+    border: 1px #707070 solid;
+    border-radius: 5px;
+    padding: 20px 20px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.plan-text{
+    height: 200px;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media (max-width: 1068px) {
+    .plans, .services, .showcase {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    .showcase {
+        height: auto;
+    }  
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+    .plans, .services, .showcase{
+      grid-template-columns: 1fr;
+    }
+  
+    .plans .plan {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+/* Mobile : iPhone 8 Plus*/
+@media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+  
+    .navbar ul {
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+    .navbar li {
+        flex-direction: column;
+      }
+
+
+    .showcase{
+        height: 200px;
+    }
+      
+    .showcase-content{
+        margin-top: 20px;
+        margin-left: 50px;
+        width: 300px;
+    }
+    
+    .showcase-content p{
+        font-size: 130%;
+        color: #333;
+    } 
+
+    .showcase-content h1{
+        font-size: 100%;
+        color: #333;
+    }
+}

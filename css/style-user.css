@@ -1,0 +1,132 @@
+/* SECTION ITEMS */
+.items {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+  
+.items .item {
+    padding: 30px;
+}
+  
+.items .item h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color:#145DA0;
+}
+
+.items .item h2 a{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color:#145DA0;
+}
+
+.items .item h2 a:hover{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color:#145DA0;
+    background-color: #DCD9D3;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.items .item .icon img {
+    max-width: 100px;
+}
+
+.les-items h1{
+    margin-top: 50px;
+    justify-content: left;
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+}
+
+.btn-item {
+    text-decoration: none;
+    border-bottom: 1px #000 solid;
+}
+  
+.btn-item:hover {
+    border-bottom: 2px #145DA0 solid;
+}
+
+/* BREADCRUMB */
+/* Style the list */
+ul.breadcrumb {
+    padding: 7px 10px;
+    list-style: none;
+    background-color: #eee;
+}   
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+}
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #145DA0;
+    text-decoration: none;
+}
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #145DA0;
+    text-decoration: underline;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+@media (max-width: 1068px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+      }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+    .items {
+      grid-template-columns: 1fr;
+    }
+  
+    .items .item {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+/* Mobile : iPhone 8 Plus*/
+@media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+  
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+}
