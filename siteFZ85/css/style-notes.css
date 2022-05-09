@@ -1,0 +1,180 @@
+/* STYLE NOTE DE GAUCHE */
+.notes {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 200px auto;
+    gap: 40px;
+}
+  
+.notes .note {
+    padding: 20px;
+}
+
+.note-gauche{
+    border: 1px #DCD9D3 solid;
+    padding: 20px 20px;
+    /*position: fixed;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);*/
+}
+
+.note-gauche a:hover:not(.current){
+    background-color: #DCD9D3;
+    color: #707070;
+}
+
+.note-gauche .current{
+    font-size: 24px;
+    background-color: #145DA0;
+    color: #DCD9D3;
+}
+
+.note-gauche a{
+    display: flex;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* STYLE NOTE DE DROITE */
+.titre{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #145DA0;
+}
+
+.row{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    display: flex;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #707070;
+    width: 100%;
+}
+
+.row .row-before{
+    width: 600px;
+}
+
+.row a:hover{
+    font-weight: 700;
+}
+
+.row-ligne-titre{
+    display: flex;
+    cursor: pointer;
+    color: #707070;
+    width: 300px;
+}
+
+.note-droite-ligne-titre{
+    margin-bottom: 20px;
+}
+
+.btn-note {
+    display: flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #fff;
+    color: #707070;
+    border: none;
+    border-radius: 5px;
+    background-color: #DCD9D3;
+    border: 1px #707070 solid;
+    margin-right: 20px;
+}
+
+.btn-note:hover {
+    transform: scale(0.98);
+}
+
+.btn-note img{
+    width: 25px;
+    display: flex;
+    margin-right: 10px;
+}
+
+/* BREADCRUMB */
+/* Style the list */
+ul.breadcrumb {
+    padding: 7px 10px;
+    list-style: none;
+    background-color: #eee;
+} 
+.fil-ariane{
+    margin-top: 20px;
+} 
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 13px;
+}
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #145DA0;
+    text-decoration: none;
+}
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #145DA0;
+    text-decoration: underline;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+/* Tablets and under */
+@media (max-width: 768px) {
+    .grid, .notes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .gauche, .droite{/* menu de gauche passe au dessus*/
+        display: grid;
+    }  
+
+    .note-gauche, .note-droite-liste{
+        width: 50%;
+    }
+
+    .icones-de-notes{
+        flex-direction: column;
+        margin-right: 30px;
+    }
+}
+
+/* Mobile : iPhone 8 Plus*/
+@media (max-width: 500px) {
+    .navbar {
+      height: 110px;
+    }
+  
+    .navbar .flex{
+      flex-direction: column;
+    }
+
+    .btn-note{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .note-droite-liste {
+        width: 50%;
+    }
+  
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+}

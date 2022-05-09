@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:wght@100;300;400;700&family=Roboto:wght@500;700&display=swap');
+
+/* CSS DE BASE */
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #051d40;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+a {
+    text-decoration: none;
+    color: #333;
+}
+  
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+  
+p {
+    margin: 10px 0;
+}
+  
+img {
+    width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}  
+
+.les-services h1, .demonstration h1, .les-plans h1{
+  font-family: 'roboto', sans-serif;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* NAVBAR */ 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  color: #fff;
+  background-color: #145DA0;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #DCD9D3 solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo-font{
+    font-family: acme, sans-serif;
+    color:#145DA0;
+}
+
+footer h1, .navbar h1{
+    font-family: acme, sans-serif;
+    color:#DCD9D3;
+}
+
+/*BOUTONS*/
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #DCD9D3;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: #145DA0;
+  border: 1px #145DA0 solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* FOOTER */
+.bg-dark{
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-dark a{
+    color: #fff;
+  }
+
+.footer .social a {
+    margin: 0 10px;
+}
+  
+.fa-pinterest:hover {
+    color: #d51a1a;
+}
+  
+.fa-facebook:hover {
+    color: #1773EA;
+}
+  
+.fa-instagram:hover {
+    color: #B32E87;
+}
+  
+.fa-twitter:hover {
+    color: #1C9CEA;
+}
+
+.py-5 {
+    padding: 4rem 0;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/*********INDEX PAGE********/
+
+/* effective for 700px or less */ 
+@media(max-width: 700px){
+	
+}/* end of "effective for 700px or less" */ 
+
+	
+/* effective for 500px or less */ 
+@media(max-width: 500px){
+  
+}/* end of "effective for 500px or less" */ 
